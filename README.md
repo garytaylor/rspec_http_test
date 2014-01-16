@@ -1,6 +1,7 @@
 # RspecHttpTest
 
-TODO: Write a gem description
+This gem is to be used with RSPEC to test HTTP endpoints whether RESTful or not, whether the format is JSON, HTML etc..
+It wraps up the rest-client and provides helpers for the main HTTP methods such as get, post, put, head etc..
 
 ## Installation
 
@@ -18,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage instructions to follow
 
 ## Contributing
 

@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = RspecHttpTest::VERSION
   spec.authors       = ["Gary Taylor"]
   spec.email         = ["gary.taylor@hismessages.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Provides easy to use helpers for testing HTTP endpoints (REST or not, any format)}
+  spec.summary       = %q{Provides easy to use helpers for testing HTTP endpoints (REST or not, any format)}
+  spec.homepage      = "https://github.com/garytaylor/rspec_http_test"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

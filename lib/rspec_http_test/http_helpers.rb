@@ -20,7 +20,7 @@ class RspecHttpTest
       args[opts_i].reverse_merge!(defaults)
       @last_response = RestClient.send(*args)
     rescue RestClient::Exception => e
-      @last_response = nil
+      @last_response = e.response
       e.response
     end
 

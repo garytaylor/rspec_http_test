@@ -10,13 +10,17 @@ class RspecHttpTest
   end
 
   module HTTPHelpers
+    def response
+      @last_response  
+    end
     def request(*args)
       defaults = RspecHttpTest.config[:defaults] || {}
       opts_i = args[2].is_a?(String) ? 3 : 2
       args[opts_i] ||= {} if defaults
       args[opts_i].reverse_merge!(defaults)
-      RestClient.send(*args)
+      @last_response = RestClient.send(*args)
     rescue RestClient::Exception => e
+      @last_response = nil
       e.response
     end
 

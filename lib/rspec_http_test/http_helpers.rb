@@ -13,6 +13,9 @@ class RspecHttpTest
     def response
       @last_response  
     end
+    def json_response
+      JSON.parse response, symbolize_names: true
+    end
     def request(*args)
       defaults = RspecHttpTest.config[:defaults] || {}
       opts_i = args[2].is_a?(String) ? 3 : 2
